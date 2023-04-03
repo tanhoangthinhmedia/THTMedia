@@ -1,4 +1,9 @@
 #!/bin/sh
+random() {
+	tr </dev/urandom -dc A-Za-z0-9 | head -c5
+	echo
+}
+
 random2() {
 	</dev/urandom tr -dc A-Z-a-z-0-9 | head -c10
 	echo
