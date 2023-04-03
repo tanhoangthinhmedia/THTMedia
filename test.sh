@@ -4,12 +4,6 @@ random() {
 	echo
 }
 
-random2() {
-	</dev/urandom tr -dc A-Z-a-z-0-9 | head -c10
-	echo
-}
-	   
-
 array=(1 2 3 4 5 6 7 8 9 0 a b c d e f)
 main_interface=$(ip route get 8.8.8.8 | awk -- '{printf $5}')
 
